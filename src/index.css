@@ -1,0 +1,138 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Helvetica Neue', 'Roboto', sans-serif;
+    background-color: #d1d7db;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.app-wrapper {
+    max-width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    margin: 0 auto;
+    background-color: #efe7dd;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    background-blend-mode: overlay;
+}
+
+.encryption-msg {
+    background-color: #ffeecd;
+    color: #54656f;
+    font-size: 0.70rem;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 90%;
+    box-shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+    line-height: 1.3;
+}
+
+/* Cards */
+.system-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.wa-btn {
+    background-color: #008069;
+    color: white;
+    border-radius: 24px;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background 0.2s;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+.wa-btn:active { background-color: #006b57; }
+
+/* Pin Box */
+.pin-box {
+    width: 35px;
+    height: 45px;
+    border: 1px solid #d1d7db;
+    background: #f0f2f5;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #111b21;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Video Container */
+.video-container {
+    width: 100%;
+    height: 180px;
+    background: black;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 1px solid #e5e7eb;
+    position: relative;
+}
+
+.instruction-list {
+    text-align: left;
+    font-size: 13px;
+    color: #54656f;
+    margin-top: 15px;
+    padding: 10px;
+    background: #f7f9fa;
+    border-radius: 8px;
+}
+.instruction-list li { margin-bottom: 5px; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+.footer-fake {
+    background-color: #f0f2f5;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+.input-pill {
+    flex: 1;
+    background: white;
+    height: 42px;
+    border-radius: 21px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    color: #8696a0;
+    font-size: 15px;
+}
+
+/* Error Message Box */
+.error-box {
+    background-color: #ffebee;
+    border: 1px solid #ffcdd2;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: left;
+}

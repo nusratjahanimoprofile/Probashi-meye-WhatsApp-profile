@@ -1,0 +1,6 @@
+{
+  "name": "Chat with Nusrat jahan",
+  "description": "An interactive replica of a WhatsApp channel chat unlock flow, integrated with Firebase Realtime Database and Telegram notification events.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
